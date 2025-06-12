@@ -43,7 +43,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                       echo "Hello , this is Test"
+                       echo "Hello , this is Tests"
                        """
                 }
                 
