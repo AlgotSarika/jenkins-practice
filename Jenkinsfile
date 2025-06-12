@@ -34,4 +34,17 @@ pipeline {
             }
         }
     }
+
+    post { 
+    
+        always { 
+            echo 'I will always say hello again!'
+        }
+        failure { 
+            echo 'This session runs when pipeline failure'
+        }
+        success { 
+            echo 'This session runs when pipeline success'
+        }
+    }
 }
