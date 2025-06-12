@@ -104,6 +104,7 @@ pipeline {
     
         always { 
             echo 'I will always say hello again!'
+            deleteDir()
         }
         failure { 
             echo 'This session runs when pipeline failure'
